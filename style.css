@@ -1,0 +1,151 @@
+/* styles.css */
+/* Reset some default browser styles */
+
+body, h1, h2, h3, p, ul, li, marquee {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 0.5rem 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 1rem;
+  }
+  
+  .announcement {
+    background-color: #f0f0f0;
+    padding: 0.5rem;
+  }
+  
+  /* .hero {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    height: 300px;
+  } */
+  
+  /* Update the styles.css file */
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    opacity: 0; /* Initially hidden */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transition for both opacity and transform */
+    transform: translateY(100%); /* Hide overlay below the card */
+  }
+  .hero {
+    position: relative;
+    height: 100vh;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('ieee.jpg');
+    background-size: cover;
+    opacity: 0.7; /* Adjust the opacity for less brightness */
+    z-index: -1;
+  }
+  .card:hover .overlay {
+    opacity: 1; /* Show the overlay on hover */
+    transform: translateY(0); /* Move the overlay up */
+  }
+  
+  .overlay p {
+    text-align: center;
+    padding: 1rem;
+  }
+  .card {
+    flex: 0 0 20%; /* Each card occupies 20% of the width */
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    max-width: 100%; /* Ensure the image fits within the card */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  
+  /* Update the styles.css file */
+
+.about {
+    padding: 2rem;
+  }
+  
+  .about-title {
+    text-align: center;
+    font-size: 36px; /* Increased font size */
+    font-weight: bold; /* Bold weight */
+    margin-bottom: 1rem;
+    color: #333; /* Adjust the color to match the header/footer scheme */
+  }
+  
+  .about-list {
+    list-style-type: none;
+  }
+  
+  .about-list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+  
+  .about-list ul {
+    margin-left: 1.5rem;
+  }
+  
+  
+  .dates {
+    background-color: #f0f0f0;
+    padding: 2rem;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
