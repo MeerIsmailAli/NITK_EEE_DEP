@@ -162,6 +162,9 @@ body, h1, h2, h3, p, ul, li, marquee {
   }
   footer .container .sec h2
   {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
     position: relative;
     color: #fff;
     font-weight: 500;
